@@ -1,0 +1,24 @@
+<svg width="1212" height="500" viewBox="0 0 1212 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2015_1347)">
+<rect width="1212" height="500" rx="40" fill="#47A7FE"/>
+<g clip-path="url(#clip1_2015_1347)">
+<path d="M931.861 90.4302C1000.49 64.0342 1104.12 205.42 1104.12 205.42V81.3401C1104.12 81.3401 1106.29 -7.14539 1185.02 -10.9247C1241.83 -13.652 1248.2 58.6149 1248.2 58.6149L1221.38 563.116H949.587L971.858 516.302H844.142C844.142 516.302 771.875 516.302 757.331 432.218C745.003 360.949 821.29 359.043 862.776 279.959C899.373 210.196 802.327 140.251 931.861 90.4302Z" fill="#EF6D58"/>
+<rect x="834.465" y="144.596" width="125.523" height="202.68" rx="62.7616" transform="rotate(17.8866 834.465 144.596)" fill="#FDF0E9"/>
+<rect x="830.917" y="139.271" width="115.48" height="186.463" rx="57.7398" transform="rotate(17.8866 830.917 139.271)" fill="#28293E"/>
+<rect x="937.079" y="163.532" width="125.523" height="202.68" rx="62.7616" transform="rotate(12.7068 937.079 163.532)" fill="#FDF0E9"/>
+<rect x="924.019" y="157.478" width="115.48" height="186.463" rx="57.7398" transform="rotate(12.7068 924.019 157.478)" fill="#28293E"/>
+<rect x="915.389" y="210.257" width="54.3901" height="52.3295" rx="26.1647" transform="rotate(12.7068 915.389 210.257)" fill="#FDF0E9"/>
+<rect x="919.758" y="222.885" width="21.2022" height="20.3989" rx="10.1994" transform="rotate(12.7068 919.758 222.885)" fill="#28293E"/>
+<rect width="52.3674" height="52.9883" rx="26.1837" transform="matrix(-0.951666 -0.307134 -0.307134 0.951666 922.921 211.041)" fill="#FDF0E9"/>
+<rect x="893.849" y="215.489" width="21.2022" height="20.3989" rx="10.1994" transform="rotate(17.8866 893.849 215.489)" fill="#28293E"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_2015_1347">
+<rect width="1212" height="500" rx="40" fill="white"/>
+</clipPath>
+<clipPath id="clip1_2015_1347">
+<rect width="456.323" height="537.225" fill="white" transform="translate(756 -11)"/>
+</clipPath>
+</defs>
+</svg>

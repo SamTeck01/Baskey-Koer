@@ -63,7 +63,7 @@ export function AboutSection() {
                 <div className="h-[30%] w-full bg-portfolio-cream" />
             </div>
 
-            <div className="relative max-w-7xl mx-auto px-8 md:px-10 w-full pt-16 md:pt-40 pb-12 md:pb-16 flex justify-between flex-col h-[1252px]">
+            <div className="relative max-w-7xl mx-auto px-8 md:px-10 w-full pt-16 md:pt-40 pb-12 md:pb-16 flex justify-between flex-col min-h-[1252px]">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center mb-12 md:mb-24">
                     {/* Left Content */}
                     <div className="flex flex-col gap-6 md:gap-8">
