@@ -63,14 +63,14 @@ export function WorkSection() {
     ];
 
     return (
-        <section className="w-full bg-portfolio-cream py-24 md:py-32 px-6 md:px-8">
+        <section className="w-full bg-portfolio-cream py-16 md:py-32 px-6 md:px-8">
             <div className="max-w-7xl mx-auto">
                 {/* Section Title */}
-                <h2 className="text-portfolio-dark font-nerko text-6xl md:text-7xl text-center mb-20 md:mb-32">
+                <h2 className="text-portfolio-dark font-nerko text-5xl md:text-7xl text-center mb-16 md:mb-32">
                     My Work
                 </h2>
 
-                <div className="flex flex-col gap-24 md:gap-32">
+                <div className="flex flex-col gap-16 md:gap-32">
                     {projects.map((project, index) => (
                         <div
                             key={index}
@@ -115,31 +115,33 @@ export function WorkSection() {
                 </div>
 
                 {/* Flyers Sub-component */}
-                <div className="mt-40 md:mt-56">
-                    <div className="text-center mb-16 md:mb-24">
-                        <h2 className="text-portfolio-dark text-4xl md:text-5xl mb-4">
+                <div className="mt-24 md:mt-56">
+                    <div className="text-center mb-12 md:mb-24">
+                        <h2 className="text-portfolio-dark text-3xl md:text-5xl mb-3">
                             Flyers
                         </h2>
-                        <p className="text-portfolio-dark/50 text-lg italic">
+                        <p className="text-portfolio-dark/50 text-base md:text-lg italic">
                             2025 Edition
                         </p>
                     </div>
 
                     <Flyers />
                 </div>
-                <button
-                    className="inline-flex h-[50px] items-center justify-center gap-3 px-7 py-0 relative rounded-[100px] border border-solid border-[#28293e4c] bg-transparent cursor-pointer transition-all hover:bg-[#28293e08] active:scale-[0.98]"
-                    type="button"
-                    aria-label="Explore More"
-                >
-                    <span className="relative w-fit font-['Poppins-SemiBold',Helvetica] font-semibold text-[#28293e] text-base tracking-[0] leading-[20.8px] whitespace-nowrap">
-                        Explore More
-                    </span>
-            
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                </button>
+                <div className="flex justify-center mt-12">
+                    <button
+                        className="inline-flex h-[50px] items-center justify-center gap-3 px-7 py-0 relative rounded-[100px] border border-solid border-[#28293e4c] bg-transparent cursor-pointer transition-all hover:bg-[#28293e08] active:scale-[0.98]"
+                        type="button"
+                        aria-label="Explore More"
+                    >
+                        <span className="relative w-fit font-['Poppins-SemiBold',Helvetica] font-semibold text-[#28293e] text-base tracking-[0] leading-[20.8px] whitespace-nowrap">
+                            Explore More
+                        </span>
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
     );

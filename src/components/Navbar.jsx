@@ -8,7 +8,7 @@ export function Navbar() {
     return (
         <>
             {/* Navbar with Hero Background */}
-            <nav className="fixed top-0 left-0 right-0 z-50 h-[80px] overflow-hidden border-b">
+            <nav className="fixed top-0 left-0 right-0 z-50 h-[70px] lg:h-[80px] overflow-hidden border-b border-white/10">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={heroBackground}
@@ -16,7 +16,7 @@ export function Navbar() {
                         className="w-full h-full object-cover"
                     />
                 </div>
-                <div className="relative z-10 h-full px-16 flex items-center justify-between">
+                <div className="relative z-10 h-full px-6 lg:px-16 flex items-center justify-between">
                     {/* Logo */}
                     <Link
                         to="/"

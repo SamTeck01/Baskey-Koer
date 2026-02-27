@@ -76,7 +76,7 @@ export const Flyers = () => {
 
     return (
         <>
-            <div className="columns-2 md:columns-3 lg:columns-5 gap-4 space-y-4 w-full px-4 overflow-hidden">
+            <div className="columns-2 md:columns-3 lg:columns-5 gap-4 space-y-4 w-full px-2 md:px-4 overflow-hidden">
                 {allImages.map((image, index) => (
                     <div
                         key={index}

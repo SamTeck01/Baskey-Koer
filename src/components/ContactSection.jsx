@@ -15,28 +15,26 @@ export function ContactSection() {
                 >
                     {/* Content Overlay */}
                     <div className="relative z-10 p-8 md:p-16 lg:p-24 flex flex-col items-start gap-4 md:gap-8">
-                        <p className="text-white font-epilogue text-lg md:text-2xl lg:text-3xl font-medium tracking-tight opacity-90 group-hover:translate-x-1 transition-transform duration-500">
+                        <p className="text-white font-epilogue text-sm md:text-2xl lg:text-3xl font-medium tracking-tight opacity-90 group-hover:translate-x-1 transition-transform duration-500">
                             Have a project in mind?
                         </p>
 
-                        <h2 className="text-white font-nerko text-6xl md:text-8xl lg:text-[120px] leading-[0.9] group-hover:translate-x-2 transition-transform duration-700 delay-75">
+                        <h2 className="text-white font-nerko text-[64px] md:text-8xl lg:text-[120px] leading-[0.8] group-hover:translate-x-2 transition-transform duration-700 delay-75 mt-1">
                             <div>Contact</div>
                             <div>Me</div>
                         </h2>
 
-                        <button className="mt-4 px-8 py-4 md:px-10 md:py-5 bg-white/10 backdrop-blur-md text-white font-epilogue text-lg md:text-xl font-semibold rounded-full hover:bg-white/20 transition-all flex items-center gap-4 border border-white/30 group/btn">
+                        <button className="mt-4 px-4 py-1.5 bg-white/10 backdrop-blur-md text-white/90 font-epilogue text-xs md:text-xl font-medium rounded-full hover:bg-white/20 transition-all flex items-center gap-2 border border-white/20 group/btn">
                             <span>Reach out</span>
-                            <div className="bg-white rounded-full p-2 group-hover/btn:rotate-45 transition-transform duration-300">
-                                <svg width="24" height="24" viewBox="0 0 50 50" fill="none">
-                                    <path
-                                        d="M18.7502 13.8547C18.7502 13.8547 33.205 12.724 35.2406 14.7595C37.2761 16.795 36.1452 31.2498 36.1452 31.2498M34.3752 15.6248L13.5418 36.4582"
-                                        stroke="#47A7FE"
-                                        strokeWidth="5"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                </svg>
-                            </div>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300">
+                                <path
+                                    d="M7 17L17 7M17 7H7M17 7V17"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
                         </button>
                     </div>
 
