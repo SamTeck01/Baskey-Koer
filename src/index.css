@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Neonderthaw&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Epilogue:wght@400;500;600;700&family=Fruktur&family=Caveat:wght@400;600;700&family=Outfit:wght@400;500;600&display=swap");
+
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@font-face {
+  font-family: 'Rockybilly';
+  src: local('Rockybilly'), local('Rocky Billy'), local('Rockybilly-Regular');
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 21 74% 95% / 0.2;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+
+    /* Portfolio Design Tokens */
+    --portfolio-dark: #28293E;
+    --portfolio-cream: #FDF0E9;
+    --portfolio-blue: #47A7FE;
+    --portfolio-coral: #EF6D58;
+    --portfolio-green: #18C99B;
+    --portfolio-purple: #BAAEFF;
+    --portfolio-border: #DBBCAC;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    scrollbar-width: none;
+  }
+
+  body {
+    @apply bg-portfolio-cream text-portfolio-dark;
+    font-family: 'Epilogue', sans-serif;
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+}
+
+@layer utilities {
+  .font-nerko {
+    font-family: 'Nerko One', cursive;
+  }
+
+  .font-neonderthaw {
+    font-family: 'Neonderthaw', cursive;
+  }
+
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-epilogue {
+    font-family: 'Epilogue', sans-serif;
+  }
+
+  .font-fruktur {
+    font-family: 'Fruktur', cursive;
+  }
+
+  .font-caveat {
+    font-family: 'Caveat', cursive;
+  }
+
+  .font-outfit {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .font-rockybilly {
+    font-family: 'Rockybilly', cursive;
+  }
+
+  .text-portfolio-dark {
+    color: var(--portfolio-dark);
+  }
+
+  .text-portfolio-cream {
+    color: var(--portfolio-cream);
+  }
+
+  .text-portfolio-blue {
+    color: var(--portfolio-blue);
+  }
+
+  .text-portfolio-coral {
+    color: var(--portfolio-coral);
+  }
+
+  .text-portfolio-green {
+    color: var(--portfolio-green);
+  }
+
+  .text-portfolio-purple {
+    color: var(--portfolio-purple);
+  }
+
+  .bg-portfolio-dark {
+    background-color: var(--portfolio-dark);
+  }
+
+  .bg-portfolio-cream {
+    background-color: var(--portfolio-cream);
+  }
+
+  .bg-portfolio-blue {
+    background-color: var(--portfolio-blue);
+  }
+
+  .bg-portfolio-coral {
+    background-color: var(--portfolio-coral);
+  }
+
+  .bg-portfolio-green {
+    background-color: var(--portfolio-green);
+  }
+
+  .bg-portfolio-purple {
+    background-color: var(--portfolio-purple);
+  }
+
+  .border-portfolio-coral {
+    border-color: var(--portfolio-coral);
+  }
+
+  .border-portfolio-border {
+    border-color: var(--portfolio-border);
+  }
+
+  .scallop-bottom {
+    clip-path: none;
+  }
+}
