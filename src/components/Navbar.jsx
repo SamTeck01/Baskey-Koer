@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import heroBackground from "../assets/Hero Background.svg";
+import portfolioLogo from "../assets/Hero content.svg";
+import { Home, User, ShoppingBag, ArrowUpRight, Download, X } from "lucide-react";
 
 export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,123 +88,88 @@ export function Navbar() {
 
             {/* Mobile Menu Modal - 100% width overlay */}
             {isMenuOpen && (
-                <div className="fixed inset-0 z-50 bg-portfolio-dark lg:hidden">
-                    {/* Close button */}
-                    <div className="absolute top-8 right-8">
-                        <button
-                            onClick={() => setIsMenuOpen(false)}
-                            className="text-portfolio-cream hover:opacity-70 transition-opacity"
-                        >
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <path
-                                    d="M24 8L8 24M8 8L24 24"
-                                    stroke="currentColor"
-                                    strokeWidth="2.5"
-                                    strokeLinecap="round"
-                                />
-                            </svg>
-                        </button>
-                    </div>
+                <div className="fixed inset-0 z-50 lg:hidden overflow-y-auto w-full max-h-[750px] overflow-scroll">
+                    {/* Background SVG */}
+                    <div
+                        className="absolute inset-0 z-0 bg-repeat bg-center pointer-events-none h-[750px] w-full bg-cover"
+                        style={{
+                            backgroundImage: `url("${heroBackground}")`,
+                        }}
+                    />
 
-                    {/* Mobile Menu Content */}
-                    <div className="h-full flex flex-col items-center justify-center gap-12 px-6">
-                        {/* Logo */}
-                        <h1 className="text-portfolio-cream text-3xl font-light mb-8">Baskey Koer</h1>
-
-                        {/* Navigation Links */}
-                        <div className="flex flex-col items-center gap-8">
+                    <div className="relative z-10 min-h-full flex flex-col p-6 max-w-md mx-auto">
+                        {/* Header: Logo and Close button */}
+                        <div className="flex items-center justify-between pb-6 border-b border-white/10 mb-8 mt-2">
                             <Link
                                 to="/"
                                 onClick={() => setIsMenuOpen(false)}
-                                className="text-portfolio-cream font-epilogue font-medium text-xl flex items-center gap-3"
+                                className="text-white font-rockybilly text-[20px] font-normal leading-none"
                             >
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path
-                                        d="M3 9L12 3L21 9V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V9Z"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                </svg>
+                                Baskey Koer
+                            </Link>
+
+                            <button
+                                onClick={() => setIsMenuOpen(false)}
+                                className="w-[42px] h-[42px] rounded-xl border border-white/20 flex items-center justify-center text-white/90 hover:text-white hover:bg-white/10 transition-colors"
+                            >
+                                <X size={20} strokeWidth={1.5} />
+                            </button>
+                        </div>
+
+                        {/* Navigation Links */}
+                        <div className="flex flex-col w-full px-2">
+                            <Link
+                                to="/"
+                                onClick={() => setIsMenuOpen(false)}
+                                className="flex items-center gap-4 text-white font-epilogue font-medium text-[16px] pb-5 border-b border-[#F76C54] mb-6"
+                            >
+                                <Home size={22} strokeWidth={1.5} className="text-white" />
                                 Home
                             </Link>
 
                             <Link
                                 to="/about"
                                 onClick={() => setIsMenuOpen(false)}
-                                className="text-portfolio-cream font-epilogue font-medium text-xl flex items-center gap-3"
+                                className="flex items-center gap-4 text-white font-epilogue font-medium text-[16px] pb-5 mb-6"
                             >
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path
-                                        d="M12 13C14.7614 13 17 10.7614 17 8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8C7 10.7614 9.23858 13 12 13ZM12 13C8.67868 13 6 14.7909 6 17V20C6 21.1046 6.89543 22 8 22H16C17.1046 22 18 21.1046 18 20V17C18 14.7909 15.3213 13 12 13Z"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                </svg>
+                                <User size={22} strokeWidth={1.5} className="text-white" />
                                 About
                             </Link>
 
                             <Link
                                 to="/portfolio"
                                 onClick={() => setIsMenuOpen(false)}
-                                className="text-portfolio-cream font-epilogue font-medium text-xl flex items-center gap-3"
+                                className="flex items-center gap-4 text-white font-epilogue font-medium text-[16px] pb-5 mb-8"
                             >
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path
-                                        d="M3 9C3 7.89543 3.89543 7 5 7H19C20.1046 7 21 7.89543 21 9V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V9Z"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                    <path
-                                        d="M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                </svg>
+                                <ShoppingBag size={22} strokeWidth={1.5} className="text-white" />
                                 My Work
                             </Link>
+
+                            {/* Buttons */}
+                            <div className="flex flex-col gap-4 mt-2">
+                                <button className="w-full h-[52px] bg-[#F76C54] rounded-full text-white font-epilogue font-medium text-[16px] flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all">
+                                    Contact Me
+                                    <ArrowUpRight size={20} className="text-white" strokeWidth={1.5} />
+                                </button>
+
+                                <button className="w-full h-[52px] bg-white/5 border border-white/10 rounded-full text-white font-epilogue font-medium text-[16px] flex items-center justify-center gap-2 hover:bg-white/10 transition-all backdrop-blur-sm">
+                                    Resume
+                                    <Download size={20} className="text-white" strokeWidth={1.5} />
+                                </button>
+                            </div>
                         </div>
 
-                        {/* Contact Me Button - Prominent in mobile */}
-                        <button className="mt-8 px-12 py-3 bg-portfolio-coral rounded-full text-white font-epilogue font-medium text-lg flex items-center gap-2 hover:bg-opacity-90 transition-all">
-                            <span>Contact Me</span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path
-                                    d="M7.49968 5.54193C7.49968 5.54193 13.2816 5.08966 14.0958 5.90386C14.9101 6.71806 14.4577 12.5 14.4577 12.5M13.7497 6.25L5.41634 14.5833"
-                                    stroke="currentColor"
-                                    strokeWidth="1.5"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
+                        {/* Bottom Logo */}
+                        <div className="mt-auto pt-16 pb-4 flex justify-center w-full">
+                            <div className="relative w-full max-w-[280px]">
+                                <img
+                                    src={portfolioLogo}
+                                    alt="Port Folio Logo"
+                                    className="w-[90%] mx-auto h-auto"
                                 />
-                            </svg>
-                        </button>
-
-                        {/* Resume Download Button */}
-                        <button className="px-12 py-3 border-2 border-portfolio-cream rounded-full text-portfolio-cream font-epilogue font-medium text-lg flex items-center gap-2 hover:bg-portfolio-cream hover:bg-opacity-10 transition-all">
-                            <span>Resume</span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path
-                                    d="M10 2V14M10 14L5 9M10 14L15 9M2 18H18"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                            </svg>
-                        </button>
-
-                        {/* Portfolio Logo at bottom */}
-                        <div className="absolute bottom-8 left-0 right-0 flex justify-center">
-                            <div className="text-portfolio-cream font-nerko text-3xl">
-                                <div>Port</div>
-                                <div>Folio</div>
+                                <div className="absolute -bottom-2 right-0 bg-[#47A7FE] px-5 py-1.5 rounded-full text-white font-epilogue font-medium text-[13px] tracking-wide z-10 border border-white/10">
+                                    Baskey Koer
+                                </div>
                             </div>
                         </div>
                     </div>
