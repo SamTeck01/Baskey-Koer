@@ -1,3 +1,4 @@
+import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 import aboutBg from "../assets/About section First part bg.svg";
 import profileImg from "../assets/Baskey Hola Image.svg";
 
@@ -79,21 +80,15 @@ export function AboutSection() {
                             <strong className="font-semibold text-white">real-world problems.</strong>
                         </p>
 
-                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-4">
-                            <button className="px-10 py-4 rounded-full bg-portfolio-dark text-white hover:bg-portfolio-dark/90 transition-all font-poppins font-medium text-lg flex items-center gap-3 group shadow-xl">
-                                <span>Contact me</span>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-4 w-full">
+                            <button className="w-full sm:w-auto px-10 py-4 rounded-full bg-portfolio-dark text-white hover:bg-portfolio-dark/90 transition-all font-poppins font-medium text-lg flex items-center justify-center gap-3 group shadow-xl ring-1 ring-portfolio-cream/80">
+                                <span>Know me</span>
+                                <ArrowUpRight className="transition-transform group-hover:translate-x-1"/>
                             </button>
 
-                            <button className="flex items-center gap-3 text-portfolio-cream hover:text-white transition-colors group py-2">
-                                <div className="w-10 h-10 rounded-full border border-portfolio-cream/30 flex items-center justify-center group-hover:border-portfolio-cream transition-colors">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
-                                    </svg>
-                                </div>
-                                <span className="font-poppins font-semibold text-lg underline underline-offset-8 decoration-portfolio-coral/30 group-hover:decoration-portfolio-coral transition-all">My Resume</span>
+                            <button className="w-full sm:w-auto flex items-center justify-center gap-3 text-portfolio-cream hover:text-white transition-colors group py-2">
+                                <span className="font-poppins font-semibold text-lg underline underline-offset-8 decoration-portfolio-coral/30 group-hover:decoration-portfolio-coral transition-all">Contact me</span>
+                                <ArrowUpRight className="transition-transform group-hover:translate-x-1"/>
                             </button>
                         </div>
                     </div>
@@ -110,49 +105,28 @@ export function AboutSection() {
                                 />
                             </div>
 
-                            {/* Hola Sticker */}
-                            <div className="absolute -top-4 -left-4 md:-top-8 md:-left-8 z-20 animate-bounce transition-all duration-500 hover:scale-110 cursor-pointer">
-                                <div className="bg-[#F76C54] text-white font-nerko text-2xl md:text-4xl px-4 py-2 md:px-6 md:py-3 rounded-[20px_40px_10px_30px] shadow-lg transform -rotate-12 border-2 border-white/20">
-                                    Hola!
-                                </div>
-                            </div>
-
-                            {/* Mucho Gusto Sticker */}
-                            <div className="absolute -bottom-4 -right-4 md:-bottom-10 md:-right-10 z-20 transition-all duration-500 hover:rotate-12 cursor-pointer">
-                                <div className="w-24 h-24 md:w-36 md:h-36 rounded-full bg-[#47A7FE] border-2 border-white/30 flex items-center justify-center p-2 text-center shadow-xl">
-                                    <span className="text-white font-epilogue font-bold text-[10px] md:text-sm leading-tight uppercase tracking-widest">
-                                        Mucho Gusto<br />mi Amigo
-                                    </span>
-                                    {/* Spinner effect decoration */}
-                                    <div className="absolute inset-0 rounded-full border border-dashed border-white/20 animate-[spin_10s_linear_infinite]"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
 
                 {/* Stats Cards */}
-                <div className="w-full mt-8 lg:mt-0 relative">
-                    {/* Dashed vertical guidelines for mobile stats section */}
-                    <div className="absolute inset-y-0 left-0 border-l-[1.5px] border-dashed border-[#DBBCAC] lg:hidden"></div>
-                    <div className="absolute inset-y-0 right-0 border-r-[1.5px] border-dashed border-[#DBBCAC] lg:hidden"></div>
-
-                    <div className="flex flex-col lg:grid lg:grid-cols-3 gap-6 lg:gap-0 lg:divide-y-0 lg:divide-x-[1.5px] lg:divide-[#DBBCAC] lg:rounded-[22px] lg:border-[1.5px] lg:border-[#DBBCAC] lg:bg-transparent px-6 lg:px-0">
+                <div className="w-full rounded-[22px] border-[1.5px] border-[#DBBCAC] bg-transparent mt-8 lg:mt-0">
+                    <div className="grid grid-cols-1 md:grid-cols-3 divide-y-[1.5px] md:divide-y-0 md:divide-x-[1.5px] divide-[#DBBCAC]">
                         {stats.map((stat, i) => (
                             <div
                                 key={i}
-                                className={`flex items-center justify-between px-6 py-8 lg:px-[45px] lg:py-[48px] gap-4 rounded-3xl lg:rounded-none lg:bg-transparent ${stat.cardBg}`}
+                                className="flex items-center justify-between px-[45px] py-[48px] gap-4"
                             >
                                 {/* Text */}
                                 <div>
                                     <p
-                                        className="font-extrabold text-[32px] md:text-[36px] text-portfolio-dark leading-none tracking-tight"
+                                        className="font-extrabold text-[36px] text-portfolio-dark leading-none tracking-tight"
                                         style={{ fontFamily: "'Epilogue', sans-serif" }}
                                     >
                                         {stat.value}
                                     </p>
                                     <p
-                                        className="text-[14px] md:text-[15px] text-portfolio-dark/80 mt-2 font-normal whitespace-nowrap"
+                                        className="text-[15px] text-portfolio-dark/80 mt-2 font-normal whitespace-nowrap"
                                         style={{ fontFamily: "'Epilogue', sans-serif" }}
                                     >
                                         {stat.label}

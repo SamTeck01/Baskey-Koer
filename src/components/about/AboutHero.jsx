@@ -53,20 +53,20 @@ export function AboutHero() {
     ];
 
     return (
-        <section className="relative w-full min-h-[1123.39px] lg:min-h-[1252px] pt-32">
+        <section className="relative w-full min-h-fit lg:min-h-[1252px] pt-[50px] pb-[100px]">
             {/* Split Background */}
             <div className="absolute inset-0 flex flex-col pointer-events-none">
                 <div
-                    className="h-[80%] lg:h-[70%] w-full bg-cover bg-bottom"
+                    className="h-[70%] lg:h-[70%] min-w-full bg-bottom"
                     style={{ backgroundImage: `url("${aboutBg}")` }}
                 />
-                <div className="h-[50%] lg:h-[30%] w-full bg-portfolio-cream" />
+                <div className="h-[40%] lg:h-[30%] w-full bg-portfolio-cream" />
             </div>
 
-            <div className="relative max-w-7xl mx-auto px-6 md:px-10 w-full pt-16 md:pt-40 pb-12 md:pb-16 flex flex-col justify-between min-h-screen lg:min-h-[1252px]">
+            <div className="relative max-w-7xl mx-auto px-6 md:px-10 w-full pt-16 md:pt-40 pb-12 md:pb-16 flex flex-col justify-between min-h-screen lg:min-h-[1252px] gap-10 md:gap-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center mb-12 md:mb-24">
                     {/* Left Content */}
-                    <div className="flex flex-col gap-6 md:gap-8">
+                    <div className="flex flex-col gap-6 md:gap-8 order-2 lg:order-1">
                         <h2 className="text-portfolio-cream font-fruktur text-4xl md:text-6xl lg:text-7xl leading-[60px]">
                             This is<br />Baskey Koer
                         </h2>
@@ -80,8 +80,8 @@ export function AboutHero() {
                         </p>
 
                         <div className="flex items-center gap-3 md:gap-8 flex-wrap mt-4">
-                            <button className="px-8 md:px-10 py-3 md:py-4 rounded-full border border-portfolio-cream border-opacity-30 bg-portfolio-dark/40 backdrop-blur-sm text-portfolio-cream hover:bg-portfolio-cream hover:bg-opacity-10 transition-all hover:text-portfolio-dark font-poppins font-medium text-base flex items-center gap-3 group">
-                                <span>Know more</span>
+                            <button className="w-full md:w-auto flex-row px-8 md:px-10 py-3 md:py-4 rounded-full border border-portfolio-cream border-opacity-30 bg-portfolio-dark/40 backdrop-blur-sm text-portfolio-cream hover:bg-portfolio-cream hover:bg-opacity-10 transition-all hover:text-portfolio-dark flex justify-center md:justify-start items-center gap-3 group">
+                                <span className="text-center md:text-left">Contact me</span>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0 w-6 h-6 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
                                     <path
                                         d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5"
@@ -93,30 +93,39 @@ export function AboutHero() {
                                 </svg>
                             </button>
 
-                            <button className="px-2 py-3 text-portfolio-cream font-poppins font-semibold text-base flex items-center gap-2 hover:opacity-80 transition-opacity group">
-                                <span className="underline underline-offset-8 decoration-portfolio-coral/30 group-hover:decoration-portfolio-coral transition-colors transition-all">Contact Me</span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="flex-shrink-0 w-6 h-6 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
+                            <button className="px-2 py-3 w-full md:w-auto text-portfolio-cream flex justify-center md:justify-start items-center gap-2 hover:opacity-80 transition-opacity group">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0 w-6 h-6 transition-transform group-hover:translate-y-1 group-hover:scale-110">
                                     <path
-                                        d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5"
+                                        d="M12 3V17M12 17L7 12M12 17L17 12"
                                         stroke="currentColor"
                                         strokeWidth="2"
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
                                     />
+                                    <rect
+                                        x="4"
+                                        y="19"
+                                        width="16"
+                                        height="2"
+                                        rx="1"
+                                        fill="currentColor"
+                                        opacity="0.4"
+                                    />
                                 </svg>
+                                <span className="text-base">My Resume</span>
                             </button>
                         </div>
                     </div>
 
                     {/* Right Content - Profile Image with Stickers */}
-                    <div className="relative w-full flex justify-center lg:justify-end mt-12 lg:mt-0">
+                    <div className="relative w-full flex justify-center lg:justify-end mt-12 lg:mt-0 order-1 lg:order-2">
                         <div className="relative group">
                             {/* Main Image */}
                             <div className="relative z-10 overflow-hidden">
                                 <img
                                     src={profileImg}
                                     alt="Baskey Koer"
-                                    className="w-full max-w-[340px] md:min-w-[586px] md:min-h-[674px] object-cover"
+                                    className="w-[400px] md:w-[586px] md:min-h-[674px]"
                                 />
                             </div>
 
