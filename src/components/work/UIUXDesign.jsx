@@ -1,6 +1,7 @@
 import cloudinaryImg from "../../assets/Cloudora.png";
 import billyPayImg from "../../assets/Billy Pay.png";
 import uxScaleImg from "../../assets/Ux Scale.png";
+import lanfriq from "../../assets/Lanfriq.png"
 
 export function UIUXDesign() {
     const projects = [
@@ -43,8 +44,8 @@ export function UIUXDesign() {
         {
             title: "Lanfriq",
             date: "Created: November 2025.",
-            description: "A fintech land tokenization platform created to democratize real estate investment by enabling users to tokenize, fractionate, and invest in land assets through a secure web3 experience.",
-            image: uxScaleImg,
+            description: "A Web3 land tokenization platform created to democratize real estate investment by enabling users to tokenize, fractionalize, and invest in land assets through a secure Web3 experience.",
+            image: lanfriq,
             buttonText: "View Figma File",
             buttonIcon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0">

@@ -63,7 +63,7 @@ export function AboutHero() {
                 <div className="h-[40%] lg:h-[30%] w-full bg-portfolio-cream" />
             </div>
 
-            <div className="relative max-w-7xl mx-auto px-6 md:px-10 w-full pt-16 md:pt-40 pb-12 md:pb-16 flex flex-col justify-between min-h-screen lg:min-h-[1252px] gap-10 md:gap-auto">
+            <div className="relative max-w-7xl mx-auto px-6 md:px-10 w-full pt-16 md:pt-40 md:pb-16 flex flex-col justify-between min-h-screen lg:min-h-[1252px] gap-20 md:gap-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center mb-12 md:mb-24">
                     {/* Left Content */}
                     <div className="flex flex-col gap-6 md:gap-8 order-2 lg:order-1">

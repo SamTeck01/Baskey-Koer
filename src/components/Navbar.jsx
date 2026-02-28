@@ -56,7 +56,10 @@ export function Navbar() {
                     </div>
 
                     {/* Contact Button */}
-                    <button className="hidden lg:flex items-center gap-1.5 px-6 h-10 rounded-full border border-border hover:bg-portfolio-cream hover:bg-opacity-10 transition-all text-portfolio-cream text-base font-epilogue font-medium">
+                    <Link
+                        to="/contact"
+                        className="hidden lg:flex items-center gap-1.5 px-6 h-10 rounded-full border border-border hover:bg-portfolio-cream hover:bg-opacity-10 transition-all text-portfolio-cream text-base font-epilogue font-medium"
+                    >
                         <span>Contact Me</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0">
                             <path
@@ -67,7 +70,7 @@ export function Navbar() {
                                 strokeLinejoin="round"
                             />
                         </svg>
-                    </button>
+                    </Link>
 
                     {/* Mobile Menu Button */}
                     <button
@@ -147,10 +150,14 @@ export function Navbar() {
 
                             {/* Buttons */}
                             <div className="flex flex-col gap-4 mt-2">
-                                <button className="w-full h-[52px] bg-portfolio-coral rounded-full text-white font-epilogue font-medium text-[16px] flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all">
+                                <Link
+                                    to="/contact"
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="w-full h-[52px] bg-portfolio-coral rounded-full text-white font-epilogue font-medium text-[16px] flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all"
+                                >
                                     Contact Me
                                     <ArrowUpRight size={20} className="text-white" strokeWidth={1.5} />
-                                </button>
+                                </Link>
 
                                 <button className="w-full h-[52px] bg-white/5 border border-white/10 rounded-full text-white font-epilogue font-medium text-[16px] flex items-center justify-center gap-2 hover:bg-white/10 transition-all backdrop-blur-sm">
                                     Resume

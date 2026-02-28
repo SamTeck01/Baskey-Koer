@@ -1,4 +1,5 @@
 import socialImg from "../../assets/Ux Scale.png";
+import glitsAndGlamour from "../../assets/Glit and glamour.png"
 
 export function SocialMedia() {
     const projects = [
@@ -6,7 +7,7 @@ export function SocialMedia() {
             title: "Glits & Glamour",
             date: "Created: August 2025.",
             description: "A fashion brand identity and social content design focused on elegance, style, and visual storytelling.",
-            image: socialImg,
+            image: glitsAndGlamour,
             buttonText: "View Presentation",
             buttonIcon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0">
