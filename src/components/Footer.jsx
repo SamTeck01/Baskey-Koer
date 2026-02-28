@@ -7,7 +7,7 @@ export function Footer() {
         <footer className="relative w-full pt-32 lg:pt-48 pb-12 px-6 overflow-hidden min-h-[1084px] lg:min-h-[696px] flex flex-col justify-end">
             {/* Wavy Top Background (Inverted About Section SVG) */}
             <div
-                className="absolute top-0 left-0 right-0 w-full h-full bg-no-repeat bg-top bg-cover pointer-events-none "
+                className="absolute top-0 left-0 right-0 w-full h-full bg-no-repeat bg-top bg-cover pointer-events-none"
                 style={{ backgroundImage: `url("${footerBg}")` }}
             />
 

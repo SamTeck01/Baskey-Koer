@@ -1,24 +1,14 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import { Navbar } from "./components/Navbar";
-import { HeroSection } from "./components/HeroSection";
-import { AboutSection } from "./components/AboutSection";
-import { WorkSection } from "./components/WorkSection";
-import { ContactSection } from "./components/ContactSection";
-import { Footer } from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import { AboutPage } from "./pages/AboutPage";
 
 function App() {
     return (
         <Router>
-            <div className="min-h-screen bg-portfolio-cream selection:bg-portfolio-coral selection:text-white">
-                <Navbar />
-                <main>
-                    <HeroSection />
-                    <AboutSection />
-                    <WorkSection />
-                    <ContactSection />
-                </main>
-                <Footer />
-            </div>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<AboutPage />} />
+            </Routes>
         </Router>
     );
 }

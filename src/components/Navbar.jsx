@@ -58,7 +58,7 @@ export function Navbar() {
                     {/* Contact Button */}
                     <button className="hidden lg:flex items-center gap-1.5 px-6 h-10 rounded-full border border-border hover:bg-portfolio-cream hover:bg-opacity-10 transition-all text-portfolio-cream text-base font-epilogue font-medium">
                         <span>Contact Me</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0">
                             <path
                                 d="M7.49968 5.54193C7.49968 5.54193 13.2816 5.08966 14.0958 5.90386C14.9101 6.71806 14.4577 12.5 14.4577 12.5M13.7497 6.25L5.41634 14.5833"
                                 stroke="currentColor"
@@ -103,7 +103,7 @@ export function Navbar() {
                             <Link
                                 to="/"
                                 onClick={() => setIsMenuOpen(false)}
-                                className="text-white font-rockybilly text-[20px] font-normal leading-none"
+                                className="text-white font-rockybilly text-[17px] font-normal leading-none"
                             >
                                 Baskey Koer
                             </Link>
@@ -121,7 +121,7 @@ export function Navbar() {
                             <Link
                                 to="/"
                                 onClick={() => setIsMenuOpen(false)}
-                                className="flex items-center gap-4 text-white font-epilogue font-medium text-[16px] pb-5 border-b border-[#F76C54] mb-6"
+                                className="flex items-center gap-4 text-white font-epilogue font-medium text-[16px] pb-5 border-b-2 border-portfolio-coral/60 mb-6"
                             >
                                 <Home size={22} strokeWidth={1.5} className="text-white" />
                                 Home
@@ -147,7 +147,7 @@ export function Navbar() {
 
                             {/* Buttons */}
                             <div className="flex flex-col gap-4 mt-2">
-                                <button className="w-full h-[52px] bg-[#F76C54] rounded-full text-white font-epilogue font-medium text-[16px] flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all">
+                                <button className="w-full h-[52px] bg-portfolio-coral rounded-full text-white font-epilogue font-medium text-[16px] flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all">
                                     Contact Me
                                     <ArrowUpRight size={20} className="text-white" strokeWidth={1.5} />
                                 </button>

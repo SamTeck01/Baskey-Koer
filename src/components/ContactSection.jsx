@@ -2,7 +2,7 @@ import contactBg from "../assets/Contact us bg.svg";
 
 export function ContactSection() {
     return (
-        <section className="relative w-full mb-[-106px] overflow-hidden z-10">
+        <section className="relative w-full mb-[-120px] overflow-hidden z-10">
             <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
                 {/* Contact Card */}
                 <div

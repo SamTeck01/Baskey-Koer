@@ -1,13 +1,13 @@
 import { Flyers } from "./Flyers";
 
-import cloudinaryImg from "../assets/Cloudinary.png";
+import cloudinaryImg from "../assets/Cloudora.png";
 import billyPayImg from "../assets/Billy Pay.png";
 import uxScaleImg from "../assets/Ux Scale.png";
 
 export function WorkSection() {
     const projects = [
         {
-            title: "Cloudinary",
+            title: "Cloudora",
             date: "Published: October 2025.",
             description: "A cloud storage platform designed to solve cluttered and inefficient file management by creating a clean, accessible cloud storage experience with intuitive organization flows.",
             image: cloudinaryImg,
@@ -102,7 +102,7 @@ export function WorkSection() {
                             {/* Project Image */}
                             <div className={`relative group ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                                 <div className="absolute -inset-1 bg-linear-to-r from-portfolio-coral/20 to-portfolio-green/20 rounded-[32px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                                <div className="relative overflow-hidden aspect-auto bg-white shadow-xl shadow-portfolio-dark/5">
+                                <div className="relative overflow-hidden aspect-auto shadow-xl shadow-portfolio-dark/5">
                                     <img
                                         src={project.image}
                                         alt={project.title}
