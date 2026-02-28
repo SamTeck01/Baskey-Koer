@@ -42,7 +42,7 @@ export function Navbar() {
                             About
                         </Link>
                         <Link
-                            to="/portfolio"
+                            to="/works"
                             className="text-portfolio-cream font-epilogue font-medium text-base h-10 px-3 flex items-center hover:border-b-2 hover:border-portfolio-coral transition-all"
                         >
                             My Work
@@ -137,7 +137,7 @@ export function Navbar() {
                             </Link>
 
                             <Link
-                                to="/portfolio"
+                                to="/works"
                                 onClick={() => setIsMenuOpen(false)}
                                 className="flex items-center gap-4 text-white font-epilogue font-medium text-[16px] pb-5 mb-8"
                             >
