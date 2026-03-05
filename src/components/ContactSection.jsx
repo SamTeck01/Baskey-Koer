@@ -1,4 +1,6 @@
 import contactBg from "../assets/Contact us bg.svg";
+import { Link } from "react-router-dom";
+import { ArrowUpRight01Icon } from "hugeicons-react";
 
 export function ContactSection() {
     return (
@@ -24,18 +26,13 @@ export function ContactSection() {
                             <div>Me</div>
                         </h2>
 
-                        <button className="mt-4 px-4 py-1.5 bg-white/10 backdrop-blur-md text-white/90 font-epilogue text-xs md:text-xl font-medium rounded-full hover:bg-white/20 transition-all flex items-center gap-2 border border-white/20 group/btn">
+                        <Link
+                            to="/contact"
+                            className="mt-4 px-4 py-1.5 bg-white/10 backdrop-blur-md text-white/90 font-epilogue text-xs md:text-xl font-medium rounded-full hover:bg-white/20 transition-all flex items-center gap-2 border border-white/20 group/btn"
+                        >
                             <span>Reach out</span>
-                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300">
-                                <path
-                                    d="M7 17L17 7M17 7H7M17 7V17"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                            </svg>
-                        </button>
+                            <ArrowUpRight01Icon size={18} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300" />
+                        </Link>
                     </div>
 
                     {/* Subtle grain effect on the card */}

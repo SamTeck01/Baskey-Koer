@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import * as Dialog from "@radix-ui/react-dialog";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Cancel01Icon, ArrowLeft01Icon, ArrowRight01Icon } from "hugeicons-react";
 
 import logo1 from "../../assets/1_frame_1618870344.png";
 import logo2 from "../../assets/2_frame_1618870345.png";
@@ -12,6 +12,7 @@ import logo6 from "../../assets/6_frame_1618869175.png";
 import logo7 from "../../assets/7_frame_1618869179.png";
 import logo8 from "../../assets/8_frame_2147224660.png";
 import logo9 from "../../assets/9_frame_69.png";
+import tiqraLogo from "../../assets/Tiqra Logo.png"
 
 export function Logofolio() {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ export function Logofolio() {
     const logos = [
         logo1, logo2, logo3,
         logo4, logo5, logo6,
-        logo7, logo8, logo9
+        logo7, logo8, logo9, tiqraLogo
     ];
 
     const openModal = (index) => {
@@ -67,35 +68,35 @@ export function Logofolio() {
                             className="relative flex items-center justify-center p-8 md:p-6 lg:p-12 cursor-zoom-in"
                         >
                             {/* 1. Vertical Custom Dashed Line (Right Side) */}
-                            <div 
+                            <div
                                 className={`
                                     absolute right-0 top-0 bottom-0 w-px
                                     ${(index + 1) % 2 === 0 ? 'hidden' : 'block'} 
                                     ${(index + 1) % 3 === 0 ? 'md:hidden' : 'md:block'}
-                                `} 
+                                `}
                                 style={{
-                                    backgroundImage: `linear-gradient(to bottom, #28293E 50%, transparent 50%)`,
+                                    backgroundImage: `linear-gradient(to bottom, #28293E 70%, transparent 70%)`,
                                     backgroundSize: '1px 12px', /* Increase 12px for wider gaps */
                                     backgroundRepeat: 'repeat-y'
                                 }}
                             />
 
                             {/* 2. Horizontal Custom Dashed Line (Bottom Side) */}
-                            <div 
+                            <div
                                 className={`
                                     absolute bottom-0 left-0 right-0 h-px
                                     ${index >= logos.length - 2 ? 'hidden' : 'block'} 
                                     ${index >= logos.length - 3 ? 'md:hidden' : 'md:block'}
-                                `} 
+                                `}
                                 style={{
-                                    backgroundImage: `linear-gradient(to right, #28293E 50%, transparent 50%)`,
+                                    backgroundImage: `linear-gradient(to right, #28293E 70%, transparent 70%)`,
                                     backgroundSize: '12px 1px', /* Increase 12px for wider gaps */
                                     backgroundRepeat: 'repeat-x'
                                 }}
                             />
 
                             {/* Logo Content */}
-                            <div className="w-full max-w-[150px] md:max-w-[180px] transition-all duration-500 hover:scale-110">
+                            <div className="w-full max-w-[150px] md:max-w-[180px] transition-all duration-500 scale-90 hover:scale-100">
                                 <img src={logo} alt={`Logo ${index + 1}`} className="w-full h-auto" />
                             </div>
                         </div>
@@ -125,7 +126,7 @@ export function Logofolio() {
                                                 className="absolute top-6 right-6 p-3 text-portfolio-dark/60 hover:text-portfolio-dark hover:bg-portfolio-dark/10 rounded-full transition-all duration-300 z-50"
                                                 aria-label="Close"
                                             >
-                                                <X size={28} />
+                                                <Cancel01Icon size={28} />
                                             </button>
                                         </Dialog.Close>
 
@@ -133,14 +134,14 @@ export function Logofolio() {
                                             onClick={(e) => { e.stopPropagation(); handlePrev(); }}
                                             className="absolute left-4 md:left-8 p-4 text-portfolio-dark/40 hover:text-portfolio-dark hover:bg-portfolio-dark/10 rounded-full transition-all duration-300 z-50 hidden md:block"
                                         >
-                                            <ChevronLeft size={48} />
+                                            <ArrowLeft01Icon size={48} />
                                         </button>
 
                                         <button
                                             onClick={(e) => { e.stopPropagation(); handleNext(); }}
                                             className="absolute right-4 md:right-8 p-4 text-portfolio-dark/40 hover:text-portfolio-dark hover:bg-portfolio-dark/10 rounded-full transition-all duration-300 z-50 hidden md:block"
                                         >
-                                            <ChevronRight size={48} />
+                                            <ArrowRight01Icon size={48} />
                                         </button>
 
                                         <Dialog.Content asChild>

@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Star, ArrowLeft, ArrowRight } from "lucide-react";
+import { StarIcon, ArrowLeft01Icon, ArrowRight01Icon } from "hugeicons-react";
 
 export function AboutTestimonials() {
     const testimonials = [
@@ -91,13 +91,13 @@ export function AboutTestimonials() {
                             onClick={() => scrollTo(activeIndex > 0 ? activeIndex - 1 : 0)}
                             className="w-10 h-10 rounded-full border border-[#d1d1d1] flex items-center justify-center text-[#888888] hover:bg-portfolio-dark hover:text-white hover:border-portfolio-dark transition-colors"
                         >
-                            <ArrowLeft size={18} strokeWidth={1.5} />
+                            <ArrowLeft01Icon size={18} />
                         </button>
                         <button
                             onClick={() => scrollTo(activeIndex < 2 ? activeIndex + 1 : 2)}
                             className="w-10 h-10 rounded-full border border-[#d1d1d1] flex items-center justify-center text-[#888888] hover:bg-portfolio-dark hover:text-white hover:border-portfolio-dark transition-colors"
                         >
-                            <ArrowRight size={18} strokeWidth={1.5} />
+                            <ArrowRight01Icon size={18} />
                         </button>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ export function AboutTestimonials() {
                                 {/* Stars */}
                                 <div className="flex items-center gap-1.5 lg:gap-2">
                                     {[...Array(item.rating)].map((_, i) => (
-                                        <Star key={i} size={isCenter ? 24 : 20} className="text-[#FFC107] fill-[#FFC107]" />
+                                        <StarIcon key={i} size={isCenter ? 24 : 20} className="text-[#FFC107] fill-[#FFC107]" />
                                     ))}
                                 </div>
 
@@ -164,7 +164,7 @@ export function AboutTestimonials() {
                         className={`transition-all duration-300 ${activeIndex === 0 ? 'opacity-20' : 'opacity-100'}`}
                         aria-label="Previous testimonial"
                     >
-                        <ArrowLeft size={16} className="text-portfolio-coral" />
+                        <ArrowLeft01Icon size={20} className="text-portfolio-coral" />
                     </button>
 
                     <div className="flex items-center gap-2">
@@ -181,7 +181,7 @@ export function AboutTestimonials() {
                         className={`transition-all duration-300 ${activeIndex === 2 ? 'opacity-20' : 'opacity-100'}`}
                         aria-label="Next testimonial"
                     >
-                        <ArrowRight size={16} className="text-portfolio-coral" />
+                        <ArrowRight01Icon size={20} className="text-portfolio-coral" />
                     </button>
                 </div>
 

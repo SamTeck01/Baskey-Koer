@@ -1,4 +1,5 @@
 import contactBg from "../../assets/Contact us bg.svg";
+import { ArrowUpRight01Icon } from "hugeicons-react";
 
 export function DeyWithMeCTA() {
     return (
@@ -19,24 +20,22 @@ export function DeyWithMeCTA() {
                     {/* Buttons Side */}
                     <div className="relative z-10 flex flex-col gap-4 mt-12 md:mt-0 w-full md:w-auto">
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/baskeykoer"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="bg-[#D4614A] text-white px-10 py-5 rounded-2xl font-nerko text-2xl md:text-4xl flex items-center justify-between gap-8 hover:scale-105 transition-transform shadow-lg shadow-black/10 group/btn"
                         >
                             <span>LinkedIn</span>
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" className="transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1">
-                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
+                            <ArrowUpRight01Icon size={32} className="transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
                         </a>
                         <a
-                            href="https://behance.net"
+                            href="https://www.behance.net/baskeykoer"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="bg-[#1C1D34] text-white px-10 py-5 rounded-2xl font-nerko text-2xl md:text-4xl flex items-center justify-between gap-8 hover:scale-105 transition-transform shadow-lg shadow-black/10 group/btn"
                         >
                             <span>Behance</span>
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" className="transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1">
-                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
+                            <ArrowUpRight01Icon size={32} className="transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
                         </a>
                     </div>
 

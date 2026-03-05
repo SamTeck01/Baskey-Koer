@@ -1,4 +1,4 @@
-import { Figma, MonitorPlay, Code } from "lucide-react"; // Fallback icons for tools
+import { ArrowRight01Icon } from "hugeicons-react";
 import StudiesCard from "../../assets/Studies Card.svg";
 import ExperienceCard from "../../assets/Experience Card.svg";
 import CompetenciesCard from "../../assets/Competencies Card.svg";
@@ -8,7 +8,7 @@ import DeyWithMeCard from "../../assets/Dey With Me Card.svg";
 export function AboutDetails() {
     return (
         <section className="w-full bg-portfolio-cream py-8 lg:py-20 lg:pb-0 relative overflow-hidden">
-            
+
             <div className="container mx-auto max-w-7xl relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 place-items-center">
 
@@ -24,7 +24,7 @@ export function AboutDetails() {
 
                     {/* Column 3: Competencies & Tools */}
                     <div className="flex flex-col justify-start w-full items-start">
-                        <div className="flex flex-col items-center gap-4 w-full scale-100 md:scale-85">
+                        <div className="flex flex-col items-center gap-8 w-full scale-100 md:scale-85">
                             {/* Competencies */}
                             <div className="relative w-full flex justify-center">
                                 <img src={CompetenciesCard} alt="Competencies Card" className="w-full h-auto object-cover" />
@@ -51,7 +51,7 @@ export function AboutDetails() {
                                             }}
                                         >
                                             LinkedIn
-                                            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="opacity-90"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                                            <ArrowRight01Icon size={20} className="opacity-90" />
                                         </a>
 
                                         <a
@@ -64,7 +64,7 @@ export function AboutDetails() {
                                             }}
                                         >
                                             Behance
-                                            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="opacity-90"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                                            <ArrowRight01Icon size={20} className="opacity-90" />
                                         </a>
                                     </div>
                                 </div>

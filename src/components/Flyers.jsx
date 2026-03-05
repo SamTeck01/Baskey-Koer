@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import * as Dialog from "@radix-ui/react-dialog";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Cancel01Icon, ArrowLeft01Icon, ArrowRight01Icon } from "hugeicons-react";
 
 import image75_1 from "../assets/image 75_1-018.png";
 import image75 from "../assets/image 75-008.png";
@@ -22,32 +22,45 @@ import image85 from "../assets/image 85-013.png";
 import image86 from "../assets/image 86-014.png";
 import image87 from "../assets/image 87-015.png";
 import image88 from "../assets/image 88-016.png";
+import image100 from "../assets/image 100.png";
+import image97 from "../assets/image 97.png";
+import image96 from "../assets/image 96.png";
+import image89 from "../assets/image 89.png";
+import image86_new from "../assets/image 86.png";
+import image82_new from "../assets/image 82.png";
+import image77_new from "../assets/image 77.png";
 
 export const Flyers = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // Flatten all 19 images into a single array for navigation
     const allImages = [
-        { src: image82, aspectRatio: "aspect-[0.86]", alt: "Gallery image 1" },
-        { src: image75, aspectRatio: "aspect-[1]", alt: "Gallery image 2" },
-        { src: image83, aspectRatio: "aspect-[0.86]", alt: "Gallery image 3" },
-        { src: image82_1, aspectRatio: "aspect-[0.86]", alt: "Gallery image 4" },
-        { src: image77_1, aspectRatio: "aspect-[1.78]", alt: "Gallery image 5" },
-        { src: image84, aspectRatio: "aspect-[1.78]", alt: "Gallery image 6" },
-        { src: image85, aspectRatio: "aspect-[1.78]", alt: "Gallery image 7" },
-        { src: image86, aspectRatio: "aspect-[1.78]", alt: "Gallery image 8" },
-        { src: image87, aspectRatio: "aspect-[1.78]", alt: "Gallery image 9" },
-        { src: image88, aspectRatio: "aspect-[1.78]", alt: "Gallery image 10" },
-        { src: image75_1, aspectRatio: "aspect-[1]", alt: "Gallery image 11" },
-        { src: image77, aspectRatio: "aspect-[0.8]", alt: "Gallery image 12" },
-        { src: image76, aspectRatio: "aspect-[1]", alt: "Gallery image 13" },
-        { src: image82_2, aspectRatio: "aspect-[0.8]", alt: "Gallery image 14" },
-        { src: image77_2, aspectRatio: "aspect-[0.8]", alt: "Gallery image 15" },
-        { src: image80, aspectRatio: "aspect-[1.33]", alt: "Gallery image 16" },
-        { src: image83_2, aspectRatio: "aspect-[1]", alt: "Gallery image 17" },
-        { src: image83_1, aspectRatio: "aspect-[0.86]", alt: "Gallery image 18" },
-        { src: image83_3, aspectRatio: "aspect-[0.9]", alt: "Gallery image 19" },
+        { src: image82, alt: "Gallery image 1" },
+        { src: image75, alt: "Gallery image 2" },
+        { src: image83, alt: "Gallery image 3" },
+        { src: image82_1, alt: "Gallery image 4" },
+        { src: image77_1, alt: "Gallery image 5" },
+        { src: image84, alt: "Gallery image 6" },
+        { src: image85, alt: "Gallery image 7" },
+        { src: image86, alt: "Gallery image 8" },
+        { src: image87, alt: "Gallery image 9" },
+        { src: image88, alt: "Gallery image 10" },
+        { src: image75_1, alt: "Gallery image 11" },
+        { src: image77, alt: "Gallery image 12" },
+        { src: image76, alt: "Gallery image 13" },
+        { src: image82_2, alt: "Gallery image 14" },
+        { src: image77_2, alt: "Gallery image 15" },
+        { src: image80, alt: "Gallery image 16" },
+        { src: image83_2, alt: "Gallery image 17" },
+        { src: image83_1, alt: "Gallery image 18" },
+        { src: image83_3, alt: "Gallery image 19" },
+        { src: image100, alt: "Gallery image 20" },
+        { src: image97, alt: "Gallery image 21" },
+        { src: image96, alt: "Gallery image 22" },
+        { src: image89, alt: "Gallery image 23" },
+        { src: image86_new, alt: "Gallery image 24" },
+        { src: image82_new, alt: "Gallery image 25" },
+        { src: image77_new, alt: "Gallery image 26" },
     ];
 
     const openModal = (index) => {
@@ -76,16 +89,16 @@ export const Flyers = () => {
 
     return (
         <>
-            <div className="columns-2 md:columns-3 lg:columns-5 gap-4 space-y-4 w-full px-2 md:px-4 overflow-hidden">
+            <div className="columns-2 md:columns-3 lg:columns-5 gap-[10px] space-y-[10px] w-full px-2 md:px-4 overflow-hidden">
                 {allImages.map((image, index) => (
                     <div
                         key={index}
                         onClick={() => openModal(index)}
-                        className="relative group overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-500 cursor-zoom-in break-inside-avoid"
+                        className=" h-fit relative group overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 cursor-zoom-in break-inside-avoid"
                     >
-                        <div className="overflow-hidden w-full h-full">
+                        <div className="overflow-hidden w-full h-fit">
                             <img
-                                className={`${image.aspectRatio} relative self-stretch w-full object-cover transform group-hover:scale-110 transition-transform duration-700 pointer-events-none`}
+                                className={`${image.aspectRatio} relative w-full transform object-contain group-hover:scale-110 transition-transform duration-700 pointer-events-none h-fit`}
                                 alt={image.alt}
                                 src={image.src}
                             />
@@ -116,7 +129,7 @@ export const Flyers = () => {
                                             className="absolute top-6 right-6 p-3 text-portfolio-dark/60 hover:text-portfolio-dark hover:bg-portfolio-dark/10 rounded-full transition-all duration-300 z-50"
                                             aria-label="Close"
                                         >
-                                            <X size={28} />
+                                            <Cancel01Icon size={28} />
                                         </button>
                                     </Dialog.Close>
 
@@ -124,14 +137,14 @@ export const Flyers = () => {
                                         onClick={(e) => { e.stopPropagation(); handlePrev(); }}
                                         className="absolute left-4 md:left-8 p-4 text-portfolio-dark/40 hover:text-portfolio-dark hover:bg-portfolio-dark/10 rounded-full transition-all duration-300 z-50 hidden md:block"
                                     >
-                                        <ChevronLeft size={48} />
+                                        <ArrowLeft01Icon size={48} />
                                     </button>
 
                                     <button
                                         onClick={(e) => { e.stopPropagation(); handleNext(); }}
                                         className="absolute right-4 md:right-8 p-4 text-portfolio-dark/40 hover:text-portfolio-dark hover:bg-portfolio-dark/10 rounded-full transition-all duration-300 z-50 hidden md:block"
                                     >
-                                        <ChevronRight size={48} />
+                                        <ArrowRight01Icon size={48} />
                                     </button>
 
                                     <Dialog.Content asChild>

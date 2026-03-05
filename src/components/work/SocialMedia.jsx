@@ -1,3 +1,4 @@
+import { ArrowUpRight01Icon } from "hugeicons-react";
 import socialImg from "../../assets/Ux Scale.png";
 import glitsAndGlamour from "../../assets/Glit and glamour.png"
 
@@ -9,17 +10,7 @@ export function SocialMedia() {
             description: "A fashion brand identity and social content design focused on elegance, style, and visual storytelling.",
             image: glitsAndGlamour,
             buttonText: "View Presentation",
-            buttonIcon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0">
-                    <path
-                        d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    />
-                </svg>
-            )
+            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />
         },
         {
             title: "UX Scale",

@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail01Icon, CallIcon, Location01Icon } from "hugeicons-react";
 
 export function ContactInfo() {
     const contactCards = [
@@ -6,7 +6,7 @@ export function ContactInfo() {
             label: "EMail",
             value: "baskeykoer@gmail.com",
             circleBg: "bg-portfolio-coral", // Soft coral/peach
-            icon: <Mail className="text-portfolio-cream" size={32} />
+            icon: <Mail01Icon className="text-portfolio-cream" size={32} />
         },
         {
             label: "Phone",
@@ -17,13 +17,13 @@ export function ContactInfo() {
                 </div>
             ),
             circleBg: "bg-portfolio-coral", // Soft blue
-            icon: <Phone className="text-portfolio-cream" size={32} />
+            icon: <CallIcon className="text-portfolio-cream" size={32} />
         },
         {
             label: "Address",
             value: "Ibadan, Oyo state , Nigeria.",
             circleBg: "bg-portfolio-coral", // Using similar theme
-            icon: <MapPin className="text-portfolio-cream" size={32} />
+            icon: <Location01Icon className="text-portfolio-cream" size={32} />
         }
     ];
 
@@ -54,7 +54,7 @@ export function ContactInfo() {
                         <div className="font-epilogue text-[20px] text-black leading-tight">
                             {card.value}
                         </div>
-                        
+
                     </div>
                 ))}
             </div>

@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import * as Dialog from "@radix-ui/react-dialog";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Cancel01Icon, ArrowLeft01Icon, ArrowRight01Icon } from "hugeicons-react";
 
 import illu1 from "../assets/illustrations/Frame 2147224654.svg";
 import illu2 from "../assets/illustrations/Frame 2147224655.svg";
@@ -61,12 +61,12 @@ export const Illustrations = () => {
 
     return (
         <section className="w-full">
-            <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 w-full px-2 md:px-4 overflow-hidden">
+            <div className="columns-2 md:columns-3 lg:columns-4 gap-[10px] space-y-[10px] w-full px-2 md:px-4 overflow-hidden">
                 {allImages.map((image, index) => (
                     <div
                         key={index}
                         onClick={() => openModal(index)}
-                        className="relative group overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-500 cursor-zoom-in break-inside-avoid"
+                        className="relative group overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 cursor-zoom-in break-inside-avoid"
                     >
                         <div className="overflow-hidden w-full h-full">
                             <img
@@ -101,7 +101,7 @@ export const Illustrations = () => {
                                             className="absolute top-6 right-6 p-3 text-portfolio-dark/60 hover:text-portfolio-dark hover:bg-portfolio-dark/10 rounded-full transition-all duration-300 z-50"
                                             aria-label="Close"
                                         >
-                                            <X size={28} />
+                                            <Cancel01Icon size={28} />
                                         </button>
                                     </Dialog.Close>
 
@@ -109,14 +109,14 @@ export const Illustrations = () => {
                                         onClick={(e) => { e.stopPropagation(); handlePrev(); }}
                                         className="absolute left-4 md:left-8 p-4 text-portfolio-dark/40 hover:text-portfolio-dark hover:bg-portfolio-dark/10 rounded-full transition-all duration-300 z-50 hidden md:block"
                                     >
-                                        <ChevronLeft size={48} />
+                                        <ArrowLeft01Icon size={48} />
                                     </button>
 
                                     <button
                                         onClick={(e) => { e.stopPropagation(); handleNext(); }}
                                         className="absolute right-4 md:right-8 p-4 text-portfolio-dark/40 hover:text-portfolio-dark hover:bg-portfolio-dark/10 rounded-full transition-all duration-300 z-50 hidden md:block"
                                     >
-                                        <ChevronRight size={48} />
+                                        <ArrowRight01Icon size={48} />
                                     </button>
 
                                     <Dialog.Content asChild>

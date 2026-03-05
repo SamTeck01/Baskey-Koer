@@ -1,3 +1,4 @@
+import { ArrowUpRight01Icon } from "hugeicons-react";
 import cloudinaryImg from "../../assets/Cloudora.png";
 import billyPayImg from "../../assets/Billy Pay.png";
 import uxScaleImg from "../../assets/Ux Scale.png";
@@ -11,17 +12,7 @@ export function UIUXDesign() {
             description: "A cloud storage platform designed to solve cluttered and inefficient file management by creating a clean, accessible cloud storage experience with intuitive organization flows.",
             image: cloudinaryImg,
             buttonText: "View Case Study",
-            buttonIcon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0">
-                    <path
-                        d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    />
-                </svg>
-            )
+            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />
         },
         {
             title: "Billy Pay",
@@ -29,17 +20,7 @@ export function UIUXDesign() {
             description: "A fintech platform built to reduce financial stress by helping users manage bills, save ahead, join group contributions, and create virtual dollar cards within one seamless platform.",
             image: billyPayImg,
             buttonText: "View Figma File",
-            buttonIcon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0">
-                    <path
-                        d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    />
-                </svg>
-            )
+            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />
         },
         {
             title: "Lanfriq",

@@ -1,4 +1,6 @@
 import { Flyers } from "./Flyers";
+import { Link } from "react-router-dom";
+import { ArrowUpRight01Icon } from "hugeicons-react";
 
 import cloudinaryImg from "../assets/Cloudora.png";
 import billyPayImg from "../assets/Billy Pay.png";
@@ -12,17 +14,7 @@ export function WorkSection() {
             description: "A cloud storage platform designed to solve cluttered and inefficient file management by creating a clean, accessible cloud storage experience with intuitive organization flows.",
             image: cloudinaryImg,
             buttonText: "View Case Study",
-            buttonIcon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0">
-                    <path
-                        d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    />
-                </svg>
-            )
+            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />
         },
         {
             title: "Billy Pay",
@@ -30,17 +22,7 @@ export function WorkSection() {
             description: "A fintech platform built to reduce financial stress by helping users manage bills, save ahead, join group contributions, and create virtual dollar cards within one seamless platform.",
             image: billyPayImg,
             buttonText: "View Figma File",
-            buttonIcon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0">
-                    <path
-                        d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    />
-                </svg>
-            )
+            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />
         },
         {
             title: "UX Scale",
@@ -48,17 +30,7 @@ export function WorkSection() {
             description: "A tech community brand focused on creating engaging visual content for designers and digital creatives.",
             image: uxScaleImg,
             buttonText: "View IG page",
-            buttonIcon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0">
-                    <path
-                        d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    />
-                </svg>
-            )
+            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />
         }
     ];
 
@@ -67,10 +39,10 @@ export function WorkSection() {
             <div className="max-w-7xl mx-auto">
                 {/* Section Title */}
                 <h2 className="text-portfolio-dark font-nerko text-5xl md:text-7xl text-center mb-16 md:mb-32">
-                    My Work
+                    Recent Work
                 </h2>
 
-                <div className="flex flex-col gap-16 md:gap-32">
+                <div className="flex flex-col gap-[70px] md:gap-32">
                     {projects.map((project, index) => (
                         <div
                             key={index}
@@ -128,19 +100,17 @@ export function WorkSection() {
                     <Flyers />
                 </div>
                 <div className="flex justify-center mt-12">
-                    <button
+                    <Link
+                        to="/works"
                         className="inline-flex h-[50px] items-center justify-center gap-3 px-7 py-0 relative rounded-[100px] border border-solid border-[#28293e4c] bg-transparent cursor-pointer transition-all hover:bg-[#28293e08] active:scale-[0.98]"
-                        type="button"
                         aria-label="Explore More"
                     >
                         <span className="relative w-fit font-['Poppins-SemiBold',Helvetica] font-semibold text-[#28293e] text-base tracking-[0] leading-[20.8px] whitespace-nowrap">
                             Explore More
                         </span>
 
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                    </button>
+                        <ArrowUpRight01Icon size={24} />
+                    </Link>
                 </div>
             </div>
         </section>

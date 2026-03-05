@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ArrowUpRight01Icon } from "hugeicons-react";
 import heroBg from "../../assets/about hero on mobile.svg";
 import { ContactInfo } from "./ContactInfo";
 
@@ -102,15 +103,7 @@ export function ContactHero() {
                                 className="h-[50px] mt-2 w-full md:w-[210px] rounded-full bg-portfolio-coral text-white font-epilogue text-lg hover:bg-portfolio-coral/90 transition-all shadow-lg shadow-portfolio-coral/20 flex items-center justify-center gap-3 active:scale-[0.98]"
                             >
                                 <span>Send Message</span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
-                                    <path
-                                        d="M9 6.65032C9 6.65032 15.9383 6.10759 16.9154 7.08463C17.8925 8.06167 17.3496 15 17.3496 15M16.5 7.5L6.5 17.5"
-                                        stroke="currentColor"
-                                        strokeWidth="2.5"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                </svg>
+                                <ArrowUpRight01Icon size={24} className="shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                             </button>
                         </form>
                     </div>
