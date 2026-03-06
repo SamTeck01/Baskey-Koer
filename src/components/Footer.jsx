@@ -63,7 +63,7 @@ export function Footer() {
                             </h3>
                             <ul className="space-y-4">
                                 <li>
-                                    <a href="#" className="flex items-center gap-3 text-white/90 font-epilogue text-[15px] hover:text-portfolio-coral transition-colors duration-300">
+                                    <a href="https://drive.google.com/file/d/1J1WdwPOeGqv5juhCahN3NlltqNG0k3Ov/view" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/90 font-epilogue text-[15px] hover:text-portfolio-coral transition-colors duration-300">
                                         <ShoppingBag01Icon size={20} className="text-white/80" /> Get my CV
                                     </a>
                                 </li>

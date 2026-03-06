@@ -15,6 +15,15 @@ import illu9 from "../assets/illustrations/image 77 (1).svg";
 import illu10 from "../assets/illustrations/image 77.svg";
 import illu11 from "../assets/illustrations/image 78.svg";
 import illu12 from "../assets/illustrations/image 79.svg";
+import rect6212 from "../assets/Rectangle 6212.png";
+import rect6213 from "../assets/Rectangle 6213.png";
+import rect6214 from "../assets/Rectangle 6214.png";
+import rect6215 from "../assets/Rectangle 6215.png";
+import rect6221 from "../assets/Rectangle 6221.png";
+import rect6222 from "../assets/Rectangle 6222.png";
+import rect6223 from "../assets/Rectangle 6223.png";
+import rect6224 from "../assets/Rectangle 6224.png";
+import rect6225 from "../assets/Rectangle 6225.png";
 
 export const Illustrations = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +42,15 @@ export const Illustrations = () => {
         { src: illu10, alt: "Illustration 10" },
         { src: illu11, alt: "Illustration 11" },
         { src: illu12, alt: "Illustration 12" },
+        { src: rect6212, alt: "Illustration 13" },
+        { src: rect6213, alt: "Illustration 14" },
+        { src: rect6214, alt: "Illustration 15" },
+        { src: rect6215, alt: "Illustration 16" },
+        { src: rect6221, alt: "Illustration 17" },
+        { src: rect6222, alt: "Illustration 18" },
+        { src: rect6223, alt: "Illustration 19" },
+        { src: rect6224, alt: "Illustration 20" },
+        { src: rect6225, alt: "Illustration 21" },
     ];
 
     const openModal = (index) => {
@@ -89,7 +107,7 @@ export const Illustrations = () => {
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     exit={{ opacity: 0 }}
-                                    onClick={() => setIsOpen(false)}
+                                    onClick={(e) => { if (e.target === e.currentTarget) setIsOpen(false); }}
                                     className="fixed inset-0 bg-white/10 backdrop-blur-2xl z-50 flex items-center justify-center overflow-hidden cursor-pointer"
                                 >
                                     <div className="absolute top-6 left-1/2 -translate-x-1/2 text-portfolio-dark/60 font-poppins text-sm tracking-widest z-50 bg-white/20 px-4 py-1 rounded-full backdrop-blur-md pointer-events-none">

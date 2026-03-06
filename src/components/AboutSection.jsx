@@ -54,7 +54,7 @@ export function AboutSection() {
                             <strong className="font-semibold text-white">real-world problems.</strong>
                         </p>
 
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-4 w-full">
+                        <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 mt-4 w-full">
                             <Link
                                 to="/about"
                                 className="w-full sm:w-auto px-10 py-4 rounded-full bg-transparent text-white transition-all font-poppins font-medium text-lg flex items-center justify-center gap-3 group shadow-xl ring-1 ring-portfolio-cream/80"

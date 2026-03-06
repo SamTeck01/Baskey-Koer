@@ -64,12 +64,14 @@ export function Navbar() {
                         >
                             My Work
                         </NavLink>
-                        <button
-                            onClick={() => {/* Trigger Resume Download */ }}
+                        <a
+                            href="https://drive.google.com/file/d/1J1WdwPOeGqv5juhCahN3NlltqNG0k3Ov/view"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-portfolio-cream font-epilogue font-medium text-base h-10 px-3 flex items-center hover:border-b-2 hover:border-portfolio-coral transition-all"
                         >
                             Resume
-                        </button>
+                        </a>
                     </div>
 
                     {/* Contact Button */}
@@ -170,10 +172,15 @@ export function Navbar() {
                                     <ArrowUpRight01Icon size={20} className="text-white" />
                                 </Link>
 
-                                <button className="w-full h-[52px] bg-white/5 border border-white/10 rounded-full text-white font-epilogue font-medium text-[16px] flex items-center justify-center gap-2 hover:bg-white/10 transition-all backdrop-blur-sm">
+                                <a
+                                    href="https://drive.google.com/file/d/1J1WdwPOeGqv5juhCahN3NlltqNG0k3Ov/view"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full h-[52px] bg-white/5 border border-white/10 rounded-full text-white font-epilogue font-medium text-[16px] flex items-center justify-center gap-2 hover:bg-white/10 transition-all backdrop-blur-sm"
+                                >
                                     Resume
                                     <Download01Icon size={20} className="text-white" />
-                                </button>
+                                </a>
                             </div>
                         </div>
 

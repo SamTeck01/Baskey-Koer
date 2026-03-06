@@ -114,7 +114,7 @@ export function Logofolio() {
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         exit={{ opacity: 0 }}
-                                        onClick={() => setIsOpen(false)}
+                                        onClick={(e) => { if (e.target === e.currentTarget) setIsOpen(false); }}
                                         className="fixed inset-0 bg-white/10 backdrop-blur-2xl z-50 flex items-center justify-center overflow-hidden cursor-pointer"
                                     >
                                         <div className="absolute top-6 left-1/2 -translate-x-1/2 text-portfolio-dark/60 font-poppins text-sm tracking-widest z-50 bg-white/20 px-4 py-1 rounded-full backdrop-blur-md pointer-events-none">

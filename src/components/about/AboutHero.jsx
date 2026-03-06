@@ -58,10 +58,15 @@ export function AboutHero() {
                                 <ArrowUpRight01Icon size={24} className="shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                             </button>
 
-                            <button className="px-2 py-3 w-full md:w-auto text-portfolio-cream flex justify-center md:justify-start items-center gap-2 hover:opacity-80 transition-opacity group">
+                            <a
+                                href="https://drive.google.com/file/d/1J1WdwPOeGqv5juhCahN3NlltqNG0k3Ov/view"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-2 py-3 w-full md:w-auto text-portfolio-cream flex justify-center md:justify-start items-center gap-2 hover:opacity-80 transition-opacity group"
+                            >
                                 <Download01Icon size={24} className="shrink-0 transition-transform group-hover:translate-y-1 group-hover:scale-110" />
                                 <span className="text-base">My Resume</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
 
