@@ -1,12 +1,21 @@
-import { Mail01Icon, CallIcon, Location01Icon } from "hugeicons-react";
+import { WhatsappIcon, CallIcon, Location01Icon } from "hugeicons-react";
 
 export function ContactInfo() {
     const contactCards = [
         {
-            label: "EMail",
-            value: "baskeykoer@gmail.com",
-            circleBg: "bg-portfolio-coral", // Soft coral/peach
-            icon: <Mail01Icon className="text-portfolio-cream" size={32} />
+            label: "WhatsApp",
+            value: (
+                <a
+                    href="https://wa.me/2348138927486"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-portfolio-coral transition-colors"
+                >
+                    +234 813 892 7486
+                </a>
+            ),
+            circleBg: "bg-portfolio-coral",
+            icon: <WhatsappIcon className="text-portfolio-cream" size={32} />
         },
         {
             label: "Phone",

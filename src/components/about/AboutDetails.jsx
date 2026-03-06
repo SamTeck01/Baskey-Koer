@@ -42,7 +42,9 @@ export function AboutDetails() {
                                 <div className="absolute inset-0 flex items-center justify-end pr-[12%] pb-[3%]">
                                     <div className="flex flex-col items-center gap-[1.5cqw]">
                                         <a
-                                            href="#"
+                                            href="https://www.linkedin.com/in/baskeykoer"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="bg-[#F76C54] text-white font-epilogue font-medium flex items-center justify-center gap-[1cqw] transform -rotate-[4deg] translate-x-[15%] hover:scale-105 transition-transform z-10 shadow-[0_4px_10px_rgba(0,0,0,0.15)]"
                                             style={{
                                                 fontSize: 'clamp(10px, 3.5cqw, 22px)',
@@ -55,7 +57,9 @@ export function AboutDetails() {
                                         </a>
 
                                         <a
-                                            href="#"
+                                            href="https://www.behance.net/baskeykoer"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="bg-[#47A7FE] text-white font-epilogue font-medium flex items-center justify-center gap-[1cqw] transform rotate-[4deg] -translate-x-[5%] hover:scale-105 transition-transform z-20 shadow-[0_4px_10px_rgba(0,0,0,0.15)]"
                                             style={{
                                                 fontSize: 'clamp(10px, 3.5cqw, 22px)',

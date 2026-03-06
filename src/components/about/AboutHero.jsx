@@ -26,7 +26,7 @@ export function AboutHero() {
     ];
 
     return (
-        <section className="relative w-full min-h-fit lg:min-h-[1252px] pt-[50px] pb-[100px]">
+        <section className="relative w-full min-h-fit lg:min-h-[1252px] pt-[50px] pb-[100px] md:mt-0">
             {/* Split Background */}
             <div className="absolute inset-0 flex flex-col pointer-events-none">
                 <div
@@ -93,7 +93,7 @@ export function AboutHero() {
 
                 {/* Stats Cards */}
                 <div className="w-full rounded-[22px] border-[1.5px] border-[#DBBCAC] bg-transparent mt-8 lg:mt-0">
-                    <div className="grid grid-cols-1 md:grid-cols-3 divide-y-[1.5px] md:divide-y-0 md:divide-x-[1.5px] divide-[#DBBCAC]">
+                    <div className="grid grid-cols-1 md:grid-cols-3 divide-y-[1.5px] md:divide-y-0 md:divide-x-[1.5px] divide-[#DBBCAC] mt-10">
                         {stats.map((stat, i) => (
                             <div
                                 key={i}

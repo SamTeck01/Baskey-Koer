@@ -20,7 +20,7 @@ export function DeyWithMeCTA() {
                     {/* Buttons Side */}
                     <div className="relative z-10 flex flex-col gap-4 mt-12 md:mt-0 w-full md:w-auto">
                         <a
-                            href="https://www.linkedin.com/baskeykoer"
+                            href="https://www.linkedin.com/in/baskeykoer"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-[#D4614A] text-white px-10 py-5 rounded-2xl font-nerko text-2xl md:text-4xl flex items-center justify-between gap-8 hover:scale-105 transition-transform shadow-lg shadow-black/10 group/btn"

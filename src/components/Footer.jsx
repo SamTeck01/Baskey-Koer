@@ -8,7 +8,8 @@ import {
     ShoppingBag01Icon,
     DribbbleIcon,
     NewTwitterIcon,
-    TiktokIcon
+    TiktokIcon,
+    WhatsappIcon
 } from "hugeicons-react";
 import { Link } from "react-router-dom";
 
@@ -73,7 +74,7 @@ export function Footer() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="flex items-center gap-3 text-white/90 font-epilogue text-[15px] hover:text-portfolio-coral transition-colors duration-300">
+                                    <a href="https://www.dribbble.com/baskeykoer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/90 font-epilogue text-[15px] hover:text-portfolio-coral transition-colors duration-300">
                                         <DribbbleIcon size={20} className="text-white/80" /> /baskeykoer
                                     </a>
                                 </li>
@@ -87,11 +88,12 @@ export function Footer() {
                             </h3>
                             <div className="grid grid-cols-3 gap-3 w-max">
                                 {[
-                                    { icon: <Linkedin01Icon size={20} />, label: "LinkedIn", href: "https://www.linkedin.com/baskeykoer" },
+                                    { icon: <Linkedin01Icon size={20} />, label: "LinkedIn", href: "https://www.linkedin.com/in/baskeykoer" },
                                     { icon: <NewTwitterIcon size={20} />, label: "X", href: "https://x.com/baskeykoer" },
                                     { icon: <InstagramIcon size={20} />, label: "Instagram", href: "https://www.instagram.com/baskeykoer" },
                                     { icon: <YoutubeIcon size={20} />, label: "Youtube", href: "https://youtube.com/@baskeykoer" },
                                     { icon: <TiktokIcon size={20} />, label: "TikTok", href: "https://www.tiktok.com/@baskeykoer" },
+                                    { icon: <WhatsappIcon size={20} />, label: "WhatsApp", href: "https://wa.me/2348138927486" },
                                     { icon: <Facebook01Icon size={20} />, label: "Facebook", href: "https://facebook.com/baskeykoer" }
                                 ].map((social, idx) => (
                                     <a
