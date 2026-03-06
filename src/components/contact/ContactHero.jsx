@@ -29,7 +29,7 @@ export function ContactHero() {
             {/* Split Background */}
             <div className="absolute inset-0 flex flex-col pointer-events-none">
                 <div
-                    className="h-[70%] lg:h-[70%] min-w-full bg-bottom"
+                    className="h-[65%] lg:h-[70%] min-w-full bg-bottom"
                     style={{ backgroundImage: `url("${heroBg}")` }}
                 />
                 <div className="h-[40%] lg:h-[30%] w-full bg-portfolio-cream" />
