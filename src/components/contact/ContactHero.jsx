@@ -20,7 +20,7 @@ export function ContactHero() {
         e.preventDefault();
         const message = `Hello Baskey Koer,\n\nMy name is ${formData.fullname}.\nPhone: ${formData.phone}\nEmail: ${formData.email}\n\nProject Info: ${formData.projectInfo}`;
         const encodedMessage = encodeURIComponent(message);
-        const whatsappUrl = `https://wa.me/2348138927486?text=${encodedMessage}`;
+        const whatsappUrl = `https://wa.me/2349138927486?text=${encodedMessage}`;
         window.open(whatsappUrl, "_blank");
     };
 
