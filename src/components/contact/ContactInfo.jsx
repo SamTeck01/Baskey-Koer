@@ -6,12 +6,12 @@ export function ContactInfo() {
             label: "WhatsApp",
             value: (
                 <a
-                    href="https://wa.me/2348138927486"
+                    href="https://wa.me/2349138927486"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-portfolio-coral transition-colors"
                 >
-                    +234 813 892 7486
+                    +234 913 892 7486
                 </a>
             ),
             circleBg: "bg-portfolio-coral",
@@ -21,7 +21,7 @@ export function ContactInfo() {
             label: "Phone",
             value: (
                 <div className="flex flex-col gap-2">
-                    <span>+234 813 892 7486</span>
+                    <span>+234 913 892 7486</span>
                     <span>+234 805 093 8686</span>
                 </div>
             ),

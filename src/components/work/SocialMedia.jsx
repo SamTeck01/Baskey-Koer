@@ -10,7 +10,8 @@ export function SocialMedia() {
             description: "A fashion brand identity and social content design focused on elegance, style, and visual storytelling.",
             image: glitsAndGlamour,
             buttonText: "View Presentation",
-            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />
+            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />,
+            link: "https://www.behance.net/gallery/234110485/Glits-Glamour-Fashion"
         },
         {
             title: "UX Scale",
@@ -28,7 +29,8 @@ export function SocialMedia() {
                         strokeLinejoin="round"
                     />
                 </svg>
-            )
+            ),
+            link: "https://www.instagram.com/ux_scale?igsh=MTF6ODR5ZDBqdHR6aA=="
         }
     ];
 
@@ -59,12 +61,17 @@ export function SocialMedia() {
                                     {project.description}
                                 </p>
 
-                                <button className="h-12 px-7 rounded-full border border-portfolio-dark/20 hover:bg-portfolio-dark hover:text-white hover:border-portfolio-dark transition-all duration-300 text-portfolio-dark font-poppins font-medium inline-flex items-center gap-3 self-start group">
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="h-12 px-7 rounded-full border border-portfolio-dark/20 hover:bg-portfolio-dark hover:text-white hover:border-portfolio-dark transition-all duration-300 text-portfolio-dark font-poppins font-medium inline-flex items-center gap-3 self-start group"
+                                >
                                     <span>{project.buttonText}</span>
                                     <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300">
                                         {project.buttonIcon}
                                     </span>
-                                </button>
+                                </a>
                             </div>
 
                             <div className="lg:col-span-6 relative group">

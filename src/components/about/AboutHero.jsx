@@ -1,4 +1,5 @@
 import { ArrowUpRight01Icon, Briefcase01Icon, Task01Icon, Award01Icon, Download01Icon } from "hugeicons-react";
+import { Link } from "react-router-dom";
 import aboutBg from "../../assets/about hero on mobile.svg";
 import profileImg from "../../assets/Baskey Hola Image.svg";
 
@@ -53,10 +54,13 @@ export function AboutHero() {
                         </p>
 
                         <div className="flex items-center gap-3 md:gap-8 flex-wrap mt-4">
-                            <button className="w-full md:w-auto flex-row px-8 md:px-10 py-3 md:py-4 rounded-full border border-portfolio-cream border-opacity-30 bg-transparent text-portfolio-cream hover:bg-portfolio-cream transition-all hover:text-portfolio-dark flex justify-center md:justify-start items-center gap-3 group">
+                            <Link
+                                to="/contact"
+                                className="w-full md:w-auto flex-row px-8 md:px-10 py-3 md:py-4 rounded-full border border-portfolio-cream border-opacity-30 bg-transparent text-portfolio-cream hover:bg-portfolio-cream transition-all hover:text-portfolio-dark flex justify-center md:justify-start items-center gap-3 group"
+                            >
                                 <span className="text-center md:text-left">Contact me</span>
                                 <ArrowUpRight01Icon size={24} className="shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                            </button>
+                            </Link>
 
                             <a
                                 href="https://drive.google.com/file/d/1J1WdwPOeGqv5juhCahN3NlltqNG0k3Ov/view"

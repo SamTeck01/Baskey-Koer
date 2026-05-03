@@ -93,7 +93,7 @@ export function Footer() {
                                     { icon: <InstagramIcon size={20} />, label: "Instagram", href: "https://www.instagram.com/baskeykoer" },
                                     { icon: <YoutubeIcon size={20} />, label: "Youtube", href: "https://youtube.com/@baskeykoer" },
                                     { icon: <TiktokIcon size={20} />, label: "TikTok", href: "https://www.tiktok.com/@baskeykoer" },
-                                    { icon: <WhatsappIcon size={20} />, label: "WhatsApp", href: "https://wa.me/2348138927486" },
+                                    { icon: <WhatsappIcon size={20} />, label: "WhatsApp", href: "https://wa.me/2349138927486" },
                                     { icon: <Facebook01Icon size={20} />, label: "Facebook", href: "https://facebook.com/baskeykoer" }
                                 ].map((social, idx) => (
                                     <a

@@ -12,7 +12,8 @@ export function UIUXDesign() {
             description: "A cloud storage platform designed to solve cluttered and inefficient file management by creating a clean, accessible cloud storage experience with intuitive organization flows.",
             image: cloudinaryImg,
             buttonText: "View Case Study",
-            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />
+            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />,
+            link: "https://www.behance.net/gallery/239996289/Cloudora-Cloud-storage-app-UIUX-Case-study"
         },
         {
             title: "Billy Pay",
@@ -20,7 +21,8 @@ export function UIUXDesign() {
             description: "A fintech platform built to reduce financial stress by helping users manage bills, save ahead, join group contributions, and create virtual dollar cards within one seamless platform.",
             image: billyPayImg,
             buttonText: "View Figma File",
-            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />
+            buttonIcon: <ArrowUpRight01Icon size={24} className="shrink-0" />,
+            link: "https://www.figma.com/design/y6mHze38xjFZ8fqbeqM43n"
         },
         {
             title: "Lanfriq",
@@ -38,7 +40,8 @@ export function UIUXDesign() {
                         strokeLinejoin="round"
                     />
                 </svg>
-            )
+            ),
+            link: "https://www.figma.com/design/eNV5bhcpQJyD3rMa0vltsd"
         }
     ];
 
@@ -69,12 +72,17 @@ export function UIUXDesign() {
                                     {project.description}
                                 </p>
 
-                                <button className="h-12 px-7 rounded-full border border-portfolio-dark/20 hover:bg-portfolio-dark hover:text-white hover:border-portfolio-dark transition-all duration-300 text-portfolio-dark font-poppins font-medium inline-flex items-center gap-3 self-start group">
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="h-12 px-7 rounded-full border border-portfolio-dark/20 hover:bg-portfolio-dark hover:text-white hover:border-portfolio-dark transition-all duration-300 text-portfolio-dark font-poppins font-medium inline-flex items-center gap-3 self-start group"
+                                >
                                     <span>{project.buttonText}</span>
                                     <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300">
                                         {project.buttonIcon}
                                     </span>
-                                </button>
+                                </a>
                             </div>
 
                             <div className="lg:col-span-6 relative group">
